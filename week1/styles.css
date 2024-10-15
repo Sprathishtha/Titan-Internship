@@ -1,0 +1,328 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #357da7;
+}
+
+nav p {
+    color: white;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+.tagline {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #333; 
+}
+.nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #357da7;
+    border-radius: 0 0 5px 5px;
+}
+
+.nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-image {
+    background-image: url('super.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.role-s-dropdown,
+        .role-dropdown,
+        .settings-dropdown {
+            display: none;
+            position: absolute;
+            background-color: #f1eded;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px white;
+            top: 100%; /* Position the dropdown below the parent item */
+            left: 0;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .settings-dropdown a {
+            color: black;
+            padding: 10px;
+            text-align: left;
+            display: block;
+            text-decoration: none;
+        }
+        .settings-dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+        nav ul li:hover .settings-dropdown {
+            display: block;
+        }
+        .invalid {
+            border-color: red;
+        }
+        .valid {
+            border-color: green;
+        }     
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 450px;
+    margin: 60px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-container input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container input[type="date"]::-webkit-inner-spin-button,
+.form-container input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+
+
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="tel"],
+form input[type="file"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #575757;
+}
+.role-selection {
+    position: relative;
+    display: inline-block;
+}
+
+.role-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.role-dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.role-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.role-selection:hover .role-dropdown {
+    display: block;
+}
+.role-selection-login {
+    position: relative;
+    display: inline-block;
+}
+
+.role-s-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.role-s-dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.role-s-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.role-selection-login:hover .role-s-dropdown {
+    display: block;
+}
+header {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: right;
+}
+
+.dashboard a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-container {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.category {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    flex: 1 1 calc(25% - 20px);
+    color: white; /* Ensure text is readable over images */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+    }
+
+.category h3 {
+    margin-top: 0;
+    color:black;
+}
+
+.category-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the link */
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.category-link:hover {
+    text-decoration: underline;
+}
+
+/* Background images for each category */
+.category-kitchen {
+    background-image: url('kitechn.jfif'); 
+    background-position: left;
+}
+
+.bedroom {
+    background-image: url('dec.jfif'); 
+}
+
+.stationery {
+    background-image: url('stationary.jpeg'); 
+}
+
+.grocery {
+    background-image: url('veg.jfif'); 
+}
+
+.beauty {
+    background-image: url('beauty.jfif'); 
+}
+
+.junk_food {
+    background-image: url('junk.jfif'); 
+}
+
+.luggage {
+    background-image: url('lug.jpg'); 
+}
+
+.toys {
+    background-image: url('toys.jfif'); 
+}
+
+footer {
+    background-color: #e9dede;
+    color: white;
+    padding: 10px;
+    text-align: center; /* Adjusted to center */
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
