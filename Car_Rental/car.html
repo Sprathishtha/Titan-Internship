@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz EQS 2023</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header img {
+            width: 100%;
+            max-width: 400px;
+            float: right;
+            border-radius: 10px;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .details h1 {
+            margin: 0;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .rating span {
+            color:#474fae;
+            font-weight: bold;
+        }
+
+        .price-section {
+            margin-top: 20px;
+        }
+
+        .price-section span.strike {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .price-section span.discount {
+            color: #474fae;
+            font-weight: bold;
+        }
+
+        .trip-details {
+            margin-top: 20px;
+        }
+
+        .trip-details input, .trip-details select {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .host {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .host img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .discount {
+            background-color: white;
+            padding: 10px;
+            color: #474fae;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="details">
+                <h1>Mercedes-Benz EQS 2023</h1>
+                <div class="rating">
+                    <span>5.0 ★</span> (4 trips)
+                </div>
+                <div class="features">
+                    <p>⚡ Electric · 4 doors · 5 seats</p>
+                </div>
+            </div>
+            <img src="car1.jpg" alt="Mercedes-Benz EQS 2023">
+        </div>
+
+        <div class="price-section">
+            <span class="strike">$93</span> <span class="discount">$84/day</span>
+            <p>$302 excl. taxes & fees</p>
+        </div>
+
+        <div class="trip-details">
+            <label for="start-date">Trip start</label>
+            <input type="date" id="start-date" value="2024-10-23"><br>
+            <label for="end-date">Trip end</label>
+            <input type="date" id="end-date" value="2024-10-26"><br>
+
+            <label for="location">Pickup & return location</label><br>
+            <select id="location">
+                <option value="MIA">Miami International Airport</option>
+            </select>
+        </div>
+
+        <div class="host">
+            <img src="rev1.jpg" alt="Host profile picture">
+            <div>
+                <p>Hosted by Conrad</p>
+                <p>8 trips · Joined Sep 2024</p>
+            </div>
+        </div>
+
+        <div class="discount">
+            3-day discount $28
+        </div>
+    </div>
+
+</body>
+</html>

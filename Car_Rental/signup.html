@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental-Sign Up</title>
+    <link rel="stylesheet" href="car.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <script src="car.js"></script>
+    <header><a href="#" class="logo"><img src="jeep.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <div class="form-container-sign">
+        <h2 style="color: #474fae;text-align: center;">Sign Up</h2>
+        <form id="sign-up">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" required><br>
+
+            <label for="city">City</label><br>
+            <input type="text" id="city" name="city" required><br>
+
+            <label for="pin-code">Pin Code</label><br>
+            <input type="text" id="pin-code" name="pin-code" required>
+
+            <label for="mobile-number">Mobile Number</label>
+            <input type="tel" id="mobile-number" name="mobile-number" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button onclick="return handleSubmit(event)" type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

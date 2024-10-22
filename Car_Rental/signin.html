@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental-Sign In</title>
+    <link rel="stylesheet" href="car.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header><a href="#" class="logo"><img src="jeep.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <div class="form-container-sign">
+        <h2 style="color: #474fae;text-align: center;">Sign In</h2>
+        <form id="sign-in" onsubmit="handleLogin(event)">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button >Sign In</button>
+         </form>
+    </div>
+    <script src="car.js">
+    </script>
+</body>
+</html>
